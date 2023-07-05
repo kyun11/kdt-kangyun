@@ -1,0 +1,174 @@
+div {
+  /* width: 200px; */
+  /* height: 200px; */
+  /* border: 1px solid black; */
+  /* background-color: lightgray; */
+}
+*/
+
+/* /* 전체 선택자 * {
+  color: red;
+}
+/* 
+태그 선택자
+span {
+  background-color: red;
+} */
+/*클래스 선택자*/
+/* .orange {
+  color: orange;
+} */
+
+/* 아이디 선택자
+#orange {
+  color: blue;
+} */
+/* 
+* {
+  color: white;
+  background-color: gray;
+}
+
+span {
+  background-color: red;
+} */
+
+#first {
+  background-color: blue;
+}
+
+.second {
+  background-color: green;
+}
+*/
+
+
+/*일치 선택자*/
+span.orange {
+  color: red;
+}
+
+/*자식 선택자*/
+ul > .orange {
+  background-color: gray;
+}
+
+/*하위 선택자*/
+ul .orange {
+  font-weight: bold;
+}
+
+/*인접 형제 선택자*/
+.orange + li {
+  font-size: 30px;
+}
+
+/*일반 형제 선택자*/
+.orange ~ li {
+  color: green;
+}
+
+/*hover : 마우스 커서를 올렸을 때*/
+a:hover {
+  color: red;
+}
+
+/*active : 마우스를 클릭하고 있는 동안*/
+a:active {
+  color: wheat;
+  background-color: black;
+}
+/*focus : 포커스가 되어 있을 때*/
+input:focus {
+  /* background-color: lightgray; */
+}
+
+h1:hover {
+  color: red;
+}
+
+a:active {
+  background-color: blue;
+}
+
+input:focus {
+  background-color: orange;
+}
+
+/*first-child*/
+.fruits span:first-child {
+  color: red;
+}
+
+.fruits div:first-child {
+  color: blue;
+}
+
+/*last-child*/
+.fruits h3:last-child {
+  text-decoration: overline;
+}
+
+.fruits p:last-child {
+  color: green;
+}
+
+/*nth-child*/
+.fruits span:nth-child(2n) {
+  color: red;
+}
+
+/*not*/
+.fruits *:not(span) {
+  background-color: aqua;
+}
+
+.stripes div:nth-child(2n) {
+  background-color: yellow;
+}
+
+.stripes div:nth-child(2n + 1) {
+  background-color: navy;
+  color: white;
+}
+
+.box::before {
+  content: 앞;
+}
+
+/*before*/
+.fruits ::before {
+  content: "과일 목록 시작";
+}
+
+/*after*/
+.fruits ::after {
+  content: "과일 목록 끝";
+}
+
+.box::before {
+  content: "택시";
+}
+
+.box::after {
+  content: "빨리";
+}
+/* input[disabled] {
+  background-color: red;
+}
+
+input[type="password"] {
+  color: red;
+} */
+
+input[placeholder="이름"] {
+  background-color: orange;
+}
+
+input[disabled] {
+  background-color: red;
+}
+
+input:not([placeholder]) {
+  background-color: blue;
+}
