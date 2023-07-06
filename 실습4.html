@@ -1,0 +1,75 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <style>
+        /* div {
+          border-width: 10px 20px 15px 25px;
+          border-style: dashed solid dotted double;
+          border-color: aqua red yellow gray;
+          border-radius: 15px 40px 5px 50px;
+        } */
+        .div1 {
+          width: 100px;
+          height: 100px;
+          background-color: orange;
+          padding: 20px;
+          border: 15px solid red;
+          box-sizing: content-box;
+          opacity: 0.5;
+        }
+        .div2 {
+          width: 100px;
+          height: 100px;
+          background-color: orange;
+          padding: 20px;
+          border: 15px solid red;
+          box-sizing: border-box;
+        }
+        .d-none {
+          display: none;
+          background-color: red;
+        }
+        .invisible {
+          visibility: hidden;
+          background-color: orange;
+        }
+        .opacity-0 {
+          opacity: 0;
+          /background-color: tomato;
+        }
+        div:hover {
+          visibility: hidden;
+        }
+        .overflow {
+          overflow: scroll;
+          width: 100px;
+          height: 100px;
+          background-color: yellow;
+        }
+        .body {
+          overflow-x: hidden;
+        }
+      </style>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <!-- <div style="width: 100px; height: 100px">테두리 실습</div> -->
+
+      <div class="div1"></div>
+      <div class="div2"></div>
+
+      <div class="square">original</div>
+      <div class="square d-none">d-none</div>
+      <div class="square invisible">invisible</div>
+      <div class="square opacity-0">opacity-0</div>
+      <div class="square">original</div>
+
+      <div style="width: 200px; height: 200px; background-color: blue"></div>
+
+      <div class="overflow">asssssssssssssssssss</div>
+    </body>
+  </html>
+</html>
